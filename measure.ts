@@ -57,7 +57,7 @@ async function main() {
         const res = await actor.main(wasm);
         const res2 = {...res, file: wasmFileName};
         console.log(res2);
-        await appendFile('measures.txt', `${res.moduleSize} ${res.cyclesSpent}\n`);
+        await appendFile('measures.log', `${res.moduleSize} ${res.cyclesSpent}\n`);
     }
 }
 
