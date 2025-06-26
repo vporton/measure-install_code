@@ -1,0 +1,23 @@
+{
+  "canisters": {
+    "measure_backend": {
+      "main": "src/measure_backend/main.mo",
+      "type": "motoko",
+      "dependencies": [
+        "dummy"
+      ]
+    },
+    "dummy": {
+      "main": "src/measure_backend/dummy.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
